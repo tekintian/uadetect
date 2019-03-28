@@ -4,7 +4,7 @@
 
 PHP  UserAgent detect, 用于检测访问者的 User Agent是属于手机 平板,还是PC, 用户浏览器名称,操作系统版本,是否微信, 谷歌,火狐等浏览器判断.
 
-> 本项目源于
+> 本项目源于  https://github.com/serbanghita/Mobile-Detect
 
 
 
@@ -13,19 +13,13 @@ PHP  UserAgent detect, 用于检测访问者的 User Agent是属于手机 平板
 1. composer require "tekintian/uadetect"
 
 ~~~php
-# 2种载入方式,选择其中一种即可
-# 方案 一:  采用autoload.php自动载入方式加载 Sentry 
+# 载入方式
+# 采用autoload.php自动载入方式加载
 require_once  __DIR__ . 'vendor/autoload.php';
 
+//使用
+$detect = new UaDetect();
 
-# 方案 二:  在你的入口文件中载入Sentry ,直接载入方式, 
-require_once  __DIR__ . '/vendor/tekintian/uadetect/src/UaDetect.php';
-
-<?php
-// These lines are mandatory.
-require_once 'Mobile_Detect.php';
-$detect = new Mobile_Detect;
-<?php
 // Basic detection.
 $detect->isMobile();
 $detect->isTablet();
