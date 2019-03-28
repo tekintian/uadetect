@@ -1,5 +1,6 @@
 {
     "name": "tekintian/uadetect",
+    "version":"1.0",
     "type": "library",
     "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
     "keywords": ["mobile", "mobile detect", "mobile detector", "php mobile detect", "detect mobile devices"],
