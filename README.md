@@ -134,5 +134,16 @@ $detect->version('Opera Mini'); // 5.0 (float)
 
 
 
+~~~shell
+#PS: 如果在composer的过程中遇到 404错误, 则可能是版本已经更新, 请清除本地缓存后重新加载.
+
+composer clear-cache
+composer require "tekintian/uadetect"
+~~~
+
+
+
+
+
 
 
